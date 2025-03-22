@@ -215,6 +215,8 @@ var/global/datum/controller/master/Master = new
 
 	current_runlevel = log(2, new_runlevel) + 1
 	report_progress("MC: Runlevel changed from [old_runlevel] to [current_runlevel]")
+	if(current_runlevel >= 1)
+		shutdown()
 	if(current_runlevel < 1)
 		CRASH("Attempted to set invalid runlevel: [new_runlevel]")
 
