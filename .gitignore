@@ -60,3 +60,11 @@ __pycache__
 
 # Running OpenDream locally
 nebula.json
+
+.direnv
+liboneiron.so
+
+bazel-*
+/buck-out
+.direnv
+codex/
